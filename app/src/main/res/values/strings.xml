@@ -6,4 +6,10 @@
     <string name="password">Enter Password</string>
     <string name="forgot">Forget Password?</string>
     <string name="sign">Sign In</string>
+    <string name="welcome">Welcome to Homepage\n</string>
+    <string name="signup">Sign up</string>
+    <string name="name">Enter name</string>
+    <string name="signin">Sign In</string>
+    <string name="noacc">"Don't have an account? "</string>
+    <string name="haveacc">Already have an account?</string>
 </resources>

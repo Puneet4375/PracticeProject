@@ -27,15 +27,18 @@
         <EditText
             android:layout_width="match_parent"
             android:hint="@string/enter"
+            android:id="@+id/enemail"
             android:layout_height="wrap_content"
-            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:imeOptions="actionNext"/>
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:imeOptions="actionDone"
+                android:id="@+id/enpass"
                 android:inputType="numberPassword"
-                android:hint="@string/password"
+                android:hint="@string/password"/>
 
     <TextView
       android:layout_width="match_parent"
@@ -48,9 +51,34 @@
       app:layout_constraintTop_toTopOf="parent" />
 
         <Button
+            android:id="@+id/btnlogin"
             android:layout_width="200sp"
             android:layout_height="wrap_content"
             android:text="@string/Login"
-            android:layout_gravity="center"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/noacc"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signup"
+                android:id="@+id/signup"
+                android:textStyle="bold" />
+
+        </LinearLayout>
 </LinearLayout>
 </LinearLayout>

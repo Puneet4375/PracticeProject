@@ -9,38 +9,41 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import org.w3c.dom.Text
 
-class MainActivity : AppCompatActivity() {
-
+class Signup : AppCompatActivity() {
     lateinit var enemail: EditText
+    lateinit var enname: EditText
     lateinit var enpass: EditText
-    lateinit var btnlogin: Button
-    lateinit var signup: TextView
+    lateinit var btnsignup: Button
+    lateinit var signin: TextView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_signup)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
         enemail = findViewById(R.id.enemail)
+        enname = findViewById(R.id.enname)
         enpass = findViewById(R.id.enpass)
-        btnlogin = findViewById(R.id.btnlogin)
-        signup = findViewById(R.id.signup)
+        btnsignup = findViewById(R.id.btnsignup)
+        signin = findViewById(R.id.signin)
 
-        signup.setOnClickListener {
-            startActivity(Intent(this, Signup::class.java))
+        signin.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
         }
-        btnlogin.setOnClickListener {
-            if(enemail.text.toString().isEmpty()){
-                enemail.error="Enter your e-mail id"
-        }else if(enpass.text.toString().isEmpty()) {
+        btnsignup.setOnClickListener {
+            if (enemail.text.toString().isEmpty()) {
+                enemail.error = "Enter your e-mail id"
+            } else if (enname.text.toString().isEmpty()) {
+                enname.error = "Enter your name"
+            } else if (enpass.text.toString().isEmpty()) {
                 enpass.error = "Enter your password"
-            }else{
+            } else {
                 startActivity(Intent(this, Homepage::class.java))
             }
         }
