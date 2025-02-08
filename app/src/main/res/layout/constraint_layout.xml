@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/guide0"
+        app:layout_constraintGuide_percent=".5"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guide1"
+        android:id="@+id/vp1"
+        app:layout_constraintEnd_toStartOf="@id/vp2"
+        app:cardBackgroundColor="@color/black">
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="#FF3F3F"
+            android:layout_gravity="center">
+
+        </View>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/vp1"
+        app:layout_constraintBottom_toTopOf="@id/guide1"
+        android:id="@+id/vp2"
+        app:cardBackgroundColor="#620B0B">
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="#DBCBCB"
+            android:layout_gravity="center">
+
+        </View>
+
+    </androidx.cardview.widget.CardView>
+   
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".33"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:id="@+id/hp1"
+        app:layout_constraintTop_toBottomOf="@id/guide1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guide2"
+        app:layout_constraintEnd_toStartOf="@id/hp2"
+        app:cardBackgroundColor="@color/design_default_color_secondary"
+        >
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="#B66565"
+            android:layout_gravity="center">
+
+        </View>
+
+    </androidx.cardview.widget.CardView>
+
+   
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".66"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:id="@+id/hp2"
+        app:layout_constraintTop_toBottomOf="@id/guide1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guide2"
+        app:layout_constraintStart_toEndOf="@id/hp1"
+        app:cardBackgroundColor="#374504E7">
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="#000000"
+            android:layout_gravity="center">
+
+        </View>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".99"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:id="@+id/hp3"
+        app:layout_constraintTop_toBottomOf="@id/guide2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guide0"
+        app:cardBackgroundColor="#9DD30034">
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="#000000"
+            android:layout_gravity="center">
+
+        </View>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".99"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:id="@+id/hp4"
+        app:layout_constraintTop_toBottomOf="@id/guide2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guide0"
+        app:cardBackgroundColor="#37000000">
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@color/design_default_color_error"
+            android:layout_gravity="center">
+
+        </View>
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

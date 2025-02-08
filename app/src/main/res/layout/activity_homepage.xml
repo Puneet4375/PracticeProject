@@ -15,8 +15,9 @@
         android:orientation="horizontal">
 
     <RelativeLayout
-        android:layout_width="130dp"
+        android:layout_width="match_parent"
         android:layout_height="120dp"
+        android:layout_weight="1"
         android:background="@color/black">
     <View
         android:id="@+id/vp"
@@ -26,7 +27,8 @@
         android:background="@color/design_default_color_primary" />
     </RelativeLayout>
     <RelativeLayout
-        android:layout_width="130dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
         android:layout_height="120dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
@@ -39,7 +41,8 @@
             android:background="@color/black" />
     </RelativeLayout>
     <RelativeLayout
-        android:layout_width="130dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
         android:layout_height="120dp"
         android:background="@color/design_default_color_secondary_variant">
         <View
@@ -57,8 +60,9 @@
         android:orientation="horizontal">
 
         <RelativeLayout
-            android:layout_width="130dp"
+            android:layout_width="match_parent"
             android:layout_height="120dp"
+            android:layout_weight="1"
             android:background="@color/black">
             <View
                 android:id="@+id/hp"
@@ -69,9 +73,10 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="130dp"
+            android:layout_width="match_parent"
             android:layout_height="120dp"
             android:layout_marginLeft="10dp"
+            android:layout_weight="1"
             android:layout_marginRight="10dp"
             android:background="@color/black">
             <View
@@ -83,8 +88,9 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="130dp"
+            android:layout_width="match_parent"
             android:layout_height="120dp"
+            android:layout_weight="1"
             android:background="@color/black">
             <View
                 android:id="@+id/mp"
@@ -101,8 +107,9 @@
         android:orientation="horizontal">
 
         <RelativeLayout
-            android:layout_width="130dp"
+            android:layout_width="match_parent"
             android:layout_height="120dp"
+            android:layout_weight="1"
             android:background="@color/black">
             <View
                 android:id="@+id/gp"
@@ -112,8 +119,9 @@
                 android:background="@color/design_default_color_primary" />
         </RelativeLayout>
         <RelativeLayout
-            android:layout_width="130dp"
+            android:layout_width="match_parent"
             android:layout_height="120dp"
+            android:layout_weight="1"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:background="@color/design_default_color_error">
@@ -125,8 +133,9 @@
                 android:background="@color/black" />
         </RelativeLayout>
         <RelativeLayout
-            android:layout_width="130dp"
+            android:layout_width="match_parent"
             android:layout_height="120dp"
+            android:layout_weight="1"
             android:background="@color/design_default_color_secondary_variant">
             <View
                 android:id="@+id/lp"
