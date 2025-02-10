@@ -28,7 +28,6 @@
             android:layout_gravity="center">
 
         </View>
-
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -46,11 +45,8 @@
             android:layout_height="20dp"
             android:background="#DBCBCB"
             android:layout_gravity="center">
-
         </View>
-
     </androidx.cardview.widget.CardView>
-   
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide1"
@@ -67,19 +63,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@id/guide2"
         app:layout_constraintEnd_toStartOf="@id/hp2"
-        app:cardBackgroundColor="@color/design_default_color_secondary"
-        >
+        app:cardBackgroundColor="@color/design_default_color_secondary">
         <View
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:background="#B66565"
             android:layout_gravity="center">
-
         </View>
 
     </androidx.cardview.widget.CardView>
-
-   
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide2"
@@ -102,7 +94,6 @@
             android:layout_height="20dp"
             android:background="#000000"
             android:layout_gravity="center">
-
         </View>
     </androidx.cardview.widget.CardView>
 
@@ -127,7 +118,6 @@
             android:layout_height="20dp"
             android:background="#000000"
             android:layout_gravity="center">
-
         </View>
     </androidx.cardview.widget.CardView>
 
@@ -152,10 +142,8 @@
             android:layout_height="20dp"
             android:background="@color/design_default_color_error"
             android:layout_gravity="center">
-
         </View>
     </androidx.cardview.widget.CardView>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,4 +12,7 @@
     <string name="signin">Sign In</string>
     <string name="noacc">"Don't have an account? "</string>
     <string name="haveacc">Already have an account?</string>
+    <string name="singapore">Singapore</string>
+    <string name="camera">Camera</string>
+    <string name="setting">Settings</string>
 </resources>
