@@ -15,4 +15,11 @@
     <string name="singapore">Singapore</string>
     <string name="camera">Camera</string>
     <string name="setting">Settings</string>
+    <string name="calculator">CALCULATOR</string>
+    <string name="enterno">Enter any number</string>
+    <string name="enterno1">Enter any number</string>
+    <string name="sub">-</string>
+    <string name="add">+</string>
+    <string name="multi">*</string>
+    <string name="div">/</string>
 </resources>
