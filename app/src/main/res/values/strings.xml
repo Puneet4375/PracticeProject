@@ -22,4 +22,13 @@
     <string name="add">+</string>
     <string name="multi">*</string>
     <string name="div">/</string>
+    <string name="enternm">Enter your name</string>
+    <string name="submit">Submit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="display">View</string>
+    <string name="color">RED</string>
+    <string name="red">Red</string>
+    <string name="blue">blue</string>
+    <string name="back">Back</string>
 </resources>
